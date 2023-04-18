@@ -1,0 +1,137 @@
+article {
+  background: var(--eerie-black-2);
+  border: 1px solid var(--jet);
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: var(--shadow-1);
+  z-index: 1;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.timeline {
+  margin-bottom: 30px;
+  text-align: start;
+}
+
+.timeline .title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 2rem;
+  margin-left: 0.5rem;
+}
+
+.icon-box {
+  position: relative;
+  background: var(clr-bg-alt);
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: var(--clr-primary);
+  box-shadow: var(--shadow);
+  z-index: 1;
+}
+
+.icon-box::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--clr-fg-alt);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.icon-box .icon {
+  width: 35px;
+}
+
+.timeline-list {
+  font-size: 14px;
+  margin-left: 45px;
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.timeline-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.timeline-item-title {
+  font-size: 14px;
+  line-height: 1.3;
+  margin-bottom: 7px;
+}
+
+.timeline-list span {
+  color: var(--clr-primary);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.timeline-item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: -30px;
+  width: 1px;
+  height: calc(100% + 50px);
+  background: var(--clr-fg);
+}
+
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -33px;
+  height: 6px;
+  width: 6px;
+  background: linear-gradient(to right, var(--clr-primary), var(--clr-bg));
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--clr-fg);
+}
+
+.timeline-text {
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+@media (min-width: 580px) {
+  .timeline-list {
+    margin-left: 65px;
+  }
+
+  .timeline-item:not(:last-child)::before {
+    left: -40px;
+  }
+
+  .timeline-item::after {
+    height: 8px;
+    width: 8px;
+    left: -43px;
+  }
+}
+
+@media (min-width: 1250px) {
+  .timeline-text {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 600px) {
+  .timeline .title-wrapper {
+    margin-left: 0rem;
+  }
+}
