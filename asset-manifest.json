@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Karim-Mohamed/static/css/main.df1cd63e.css",
+    "main.js": "/Karim-Mohamed/static/js/main.f59b7565.js",
+    "static/media/karim-C.V-2.pdf": "/Karim-Mohamed/static/media/karim-C.V-2.6f429c750091814f40df.pdf",
+    "index.html": "/Karim-Mohamed/index.html",
+    "main.df1cd63e.css.map": "/Karim-Mohamed/static/css/main.df1cd63e.css.map",
+    "main.f59b7565.js.map": "/Karim-Mohamed/static/js/main.f59b7565.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df1cd63e.css",
+    "static/js/main.f59b7565.js"
+  ]
+}
